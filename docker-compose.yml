@@ -1,0 +1,10 @@
+version: '2'
+services:
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+  mongo:
+    build: ./mongodb
+    ports:
+      - "27017:27017"
